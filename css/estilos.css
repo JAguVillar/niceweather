@@ -1,0 +1,14 @@
+.contenedor {
+    width: 500px;
+    margin: auto;
+    background-color: lightgray;
+}
+
+#actualClima {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+}
+
+img{
+    width: 15%;
+}
