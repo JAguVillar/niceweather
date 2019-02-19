@@ -13,20 +13,20 @@
     font-size: 20px;
     width: 800px;
     margin: auto;
-    background-color: #e9ecef;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    
 }
 
 #actualClima {
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: 1fr 1fr 1fr;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 img {
@@ -39,7 +39,9 @@ img {
     justify-content: center;
 }
 
-#fecha {}
+#fecha {
+    margin: 10px
+}
 
 .contenedorTemperatura {
     display: flex;
@@ -47,11 +49,13 @@ img {
     justify-content: flex-end;
 }
 
-#temperatura {}
+#temperatura {
+}
 
 .contenedorIcono {}
 
-#icono {}
+#icono {
+}
 
 .contenedorPronostico {
     display: flex;
@@ -59,7 +63,9 @@ img {
     justify-content: center;
 }
 
-#pronostico {}
+#pronostico {
+    margin: 10px
+}
 
 .contenedorHumedad {
     text-align: center;
