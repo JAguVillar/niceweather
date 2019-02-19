@@ -12,15 +12,21 @@
 .contenedor {
     font-size: 20px;
     width: 800px;
-    height: 125px;
     margin: auto;
     background-color: #e9ecef;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 #actualClima {
     display: grid;
-    grid-template-rows: auto auto 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 img {
@@ -29,7 +35,7 @@ img {
 
 .contenedorFecha {
     display: flex;
-    grid-column: span 2;
+    grid-column: span 3;
     justify-content: center;
 }
 
@@ -49,16 +55,23 @@ img {
 
 .contenedorPronostico {
     display: flex;
-    grid-column: span 2;
+    grid-column: span 3;
     justify-content: center;
 }
 
 #pronostico {}
 
-.contenedorInfo {
-    background-color: #e9ecef;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.contenedorHumedad {
+    text-align: center;
+    font-size: 14px;
+}
+
+.contenedorPrecipitacion {
+    text-align: center;
+    font-size: 14px;
+}
+
+.contenedorViento {
     text-align: center;
     font-size: 14px;
 }
