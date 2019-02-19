@@ -5,18 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v0.0.2/css/unicons.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="contenedor-ubicacion">
+        <div id="ciudad"><i class='uil uil-location-point'></i>New York</div>
+        <div style="text-align: center; color: #ced4da ">Pronostico para hoy</div>
+    </div>
     <div class="contenedor">
         <div id="actualClima">
-            <div>New York, New York</div>
-            <div>New York</div>
-            <div><img src="iconfinder_weather-01_1530392.svg" alt=""></div>
+            <div class="contenedorFecha">
+                <div id="fecha"></div>
+            </div>
+            <div class="contenedorTemperatura">
+                <div id="temperatura"></div>
+            </div>
+            <div class="contenedorIcono">
+                <div id="icono"></div>
+            </div>
+            <div class="contenedorPronostico">
+                <div id="pronostico"></div>
+            </div>
+        </div>
+        <div class="contenedorInfo">
         </div>
     </div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
 
 </html>
