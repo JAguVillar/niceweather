@@ -38,7 +38,7 @@ function localizacion(position) {
         dia[5] = "Viernes";
         dia[6] = "Sabado";
 
-        $("#fecha").html(dia[diaSemana] + ` ` + diaNumero);
+        $("#fecha").html(`Hoy, ` + dia[diaSemana] + ` ` + diaNumero);
 
         $("#temperatura").html(Math.round(data.currently.temperature) + ` °C`);
 
@@ -47,9 +47,11 @@ function localizacion(position) {
 
         $("#pronostico").html(data.currently.summary);
 
+        $("#minMax").html(Math.round(data.daily.data[0].temperatureMin) + `° - ` + Math.round(data.daily.data[0].temperatureMax) + `°`);
+
         $(".contenedorHumedad").html(`<div id="humedad" style="margin: 10px"><i class='uil uil-tear'></i> Humedad: ` +
             Math.round(data.currently.humidity * 100) + `%</div>`);
-        $(".contenedorPrecipitacion").html(`<div id="precipitacion" style="margin: 10px"><i class='uil uil-umbrella'></i> Probabilidad de Precipitacion: ` +
+        $(".contenedorPrecipitacion").html(`<div id="precipitacion" style="margin: 10px"><i class='uil uil-umbrella'></i> % Precipitacion: ` +
             Math.round(data.currently.precipProbability * 100) + `%</div>`);
         $(".contenedorViento").html(`<div id="viento" style="margin: 10px"><i class='uil uil-wind'></i> Viento: ` +
             data.currently.windSpeed + ` km/h.</div>`);

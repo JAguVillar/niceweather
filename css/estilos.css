@@ -7,10 +7,12 @@
 
 #ciudad {
     text-align: center;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .contenedor {
-    width: 800px;
+    width: 600px;
     margin: auto;
 }
 
@@ -19,9 +21,9 @@
     font-size: 20px;
     margin-top: 10px;
     overflow: hidden;
-    display: grid;
+    /* display: grid;
     grid-template-rows: auto auto auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; */
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
     box-shadow: 3px 3px 10px #E3E3E3;
@@ -33,7 +35,6 @@ img {
 
 .contenedorFecha {
     display: flex;
-    grid-column: span 3;
     justify-content: center;
 }
 
@@ -42,19 +43,25 @@ img {
 }
 
 .contenedorTempIcono {
-    grid-column-start: 2;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#temperatura {}
+#temperatura {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+}
 
-#icono {}
+#icono { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 .contenedorPronostico {
     display: flex;
-    grid-column: span 3;
     justify-content: center;
 }
 
@@ -62,18 +69,42 @@ img {
     margin: 10px
 }
 
+.contenedorMinMax {
+    display: flex;
+    justify-content: center;   
+    margin-bottom: 10px;
+}
+
+#minMax {
+    font-size: 14px;
+    color: #adb5bd;
+}
+
+.contenedorInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #f1f3f5;
+}
+
 .contenedorHumedad {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
 }
 
 .contenedorPrecipitacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-size: 14px;
 }
 
 .contenedorViento {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
 }
 
