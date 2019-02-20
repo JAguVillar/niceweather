@@ -10,27 +10,25 @@
 }
 
 .contenedor {
-    font-size: 20px;
     width: 800px;
     margin: auto;
-    
 }
 
 #actualClima {
+    background: #f8f9fa;
+    font-size: 20px;
+    margin-top: 10px;
+    overflow: hidden;
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: 1fr 1fr 1fr;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.23);
-    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.23);
-    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.23);
-    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.23);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 3px 3px 10px #E3E3E3;
 }
 
 img {
-    width: 15%;
+    width: 30%;
 }
 
 .contenedorFecha {
@@ -43,19 +41,16 @@ img {
     margin: 10px
 }
 
-.contenedorTemperatura {
+.contenedorTempIcono {
+    grid-column-start: 2;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-#temperatura {
-}
+#temperatura {}
 
-.contenedorIcono {}
-
-#icono {
-}
+#icono {}
 
 .contenedorPronostico {
     display: flex;
