@@ -17,20 +17,12 @@
 }
 
 #actualClima {
-    background: #f8f9fa;
     font-size: 20px;
     margin-top: 10px;
     overflow: hidden;
-    /* display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 1fr 1fr 1fr; */
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
     box-shadow: 3px 3px 10px #E3E3E3;
-}
-
-img {
-    width: 30%;
 }
 
 .contenedorFecha {
@@ -54,10 +46,14 @@ img {
     font-size: 30px;
 }
 
-#icono { 
+#icono {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+#icono>img {
+    width: 30%;
 }
 
 .contenedorPronostico {
@@ -71,7 +67,7 @@ img {
 
 .contenedorMinMax {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     margin-bottom: 10px;
 }
 
@@ -87,6 +83,7 @@ img {
 }
 
 .contenedorHumedad {
+    /* background: #e7f5ff; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,6 +91,7 @@ img {
 }
 
 .contenedorPrecipitacion {
+    /* background: #e3fafc; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +100,7 @@ img {
 }
 
 .contenedorViento {
+    /* background: #e6fcf5; */
     display: flex;
     align-items: center;
     justify-content: center;

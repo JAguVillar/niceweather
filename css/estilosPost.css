@@ -1,0 +1,61 @@
+.contenedorDia {
+ margin-top: 10px;
+ width: 600px;
+ height: 100px;
+ display: grid;
+ grid-template-columns: auto 1fr 120px 50px 50px;
+ grid-template-rows: 1fr 1fr;
+ box-shadow: 3px 3px 10px #E3E3E3;
+ margin-bottom: 20px;
+}
+
+#iconoPost {
+ grid-row: span 2;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#iconoPost>img {
+ width: 50%;
+}
+
+#diaPost {
+ grid-area: 1/2;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+}
+
+#pronosticoPost {
+ grid-area: 2/2;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+}
+
+#lluviaPost {
+ color: #3bc9db;
+ grid-row: span 2;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#contenedorMax {
+ grid-row: span 2;
+ background: #ffe3e3;
+ color: #ffa8a8;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#contenedorMin {
+ grid-row: span 2;
+ background: #d0ebff;
+ color: #74c0fc;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}

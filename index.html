@@ -8,13 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v0.0.2/css/unicons.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilosPost.css">
     <title>Document</title>
 </head>
 
 <body>
-
     <div class="contenedor">
-        <div id="ciudad"><i class='uil uil-location-point'></i>New York</div>
+        <input type="search" id="address-input" placeholder="Where are we going?" />
+        <div id="ciudad" style="margin-top: 20px;"><i class='uil uil-location-point'></i>New York</div>
         <div style="text-align: center; color: #ced4da ">Pronostico para hoy</div>
         <div id="actualClima">
             <div class="contenedorFecha">
@@ -40,11 +41,18 @@
             </div>
         </div>
 
-        <div style="display: flex; justify-content: center; margin-top: 20px; color: #ced4da">Pronostico para los
+        <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px; color: #ced4da">Pronostico
+            para los
             proximos 7 dias</div>
+
+        <div class="contenedorPronosticos">
+
+        </div>
+
     </div>
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/places.js@1.15.4"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 
