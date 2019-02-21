@@ -1,15 +1,19 @@
-var longitud;
-var latitud;
+var placesAutocomplete = places({
+    appId: 'plU99I6Y3I2Z',
+    apiKey: '1cf647b42db5b6fc90b9892b48b04557',
+    container: document.querySelector('#address-input'),
+    type: 'city', // Search only for cities names
+    aroundLatLngViaIP: false, // disable the extra search/boost around the source IP
+    useDeviceLocation: true
+});
 
-if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(localizacion);
-} else {
-    alert("Fuck");
-}
+placesAutocomplete.on('change', function (e) {
+    console.log(e.suggestion);
 
-function localizacion(position) {
-    longitud = position.coords.longitude;
-    latitud = position.coords.latitude;
+    var longitud = e.suggestion.latlng.lng;
+    var latitud = e.suggestion.latlng.lat;
+    var ciudad = e.suggestion.name;
+
     let proxy = `https://cors-anywhere.herokuapp.com/`;
     let apiURL = `${proxy}https://api.darksky.net/forecast/9155007309d8bd89b080c1921f5d1ac1/${latitud}, ${longitud}?lang=es&units=si`;
 
@@ -20,6 +24,8 @@ function localizacion(position) {
     });
 
     function actualizar(data) {
+        $(".contenedorPronosticos").html("");
+        $("#ciudad").html("");
         var fecha = new Date();
         var diaNumero = fecha.getDate();
         var diaSemana = fecha.getDay();
@@ -38,8 +44,7 @@ function localizacion(position) {
         dia[5] = "Viernes";
         dia[6] = "Sabado";
 
-        var ciudad = data.timezone.split("/");
-        $("#ciudad").append(ciudad[2]);
+        $("#ciudad").append(ciudad);
 
         $("#fecha").html(`Hoy, ` + dia[diaSemana] + ` ` + diaNumero);
 
@@ -126,4 +131,4 @@ function localizacion(position) {
             $(".contenedorPronosticos").append(post);
         }
     }
-}
+});

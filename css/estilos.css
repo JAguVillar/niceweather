@@ -5,7 +5,11 @@
 
 .contenedor-ubicacion {}
 
-#ciudad {
+.uil-location-point:before {
+    margin: 0;
+}
+
+#contenedorCiudad {
     text-align: center;
     font-size: 20px;
     font-weight: 700;

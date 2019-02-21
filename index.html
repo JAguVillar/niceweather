@@ -15,7 +15,10 @@
 <body>
     <div class="contenedor">
         <input type="search" id="address-input" placeholder="Where are we going?" />
-        <div id="ciudad" style="margin-top: 20px;"><i class='uil uil-location-point'></i>New York</div>
+        <div id="contenedorCiudad" style="margin-top: 20px;">
+            <i class='uil uil-location-point'></i>
+            <span id="ciudad"></span>
+        </div>
         <div style="text-align: center; color: #ced4da ">Pronostico para hoy</div>
         <div id="actualClima">
             <div class="contenedorFecha">
@@ -41,7 +44,8 @@
             </div>
         </div>
 
-        <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px; color: #ced4da">Pronostico
+        <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px; color: #ced4da">
+            Pronostico
             para los
             proximos 7 dias</div>
 
@@ -54,6 +58,8 @@
 
 <script src="https://cdn.jsdelivr.net/npm/places.js@1.15.4"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/algoliasearch/3.31/algoliasearchLite.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/buscador.js"></script>
 
 </html>
